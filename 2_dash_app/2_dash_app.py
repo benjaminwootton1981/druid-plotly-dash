@@ -294,11 +294,11 @@ def update_dashboard(n_clicks, start_day, start_month, start_year, start_hour, s
                  end_time.strftime(format='%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z']
 
     # define the Druid URL
-    url = 'http://34.243.113.4:8888/druid/v2/?pretty'
+    url = 'http://54.78.73.75:8888/druid/v2/?pretty'
 
     # define the Druid query
     query = {'queryType': 'scan',
-             'dataSource': '3_3_Order',
+             'dataSource': '1_1_Orders',
              'intervals': intervals,
              'granularity': 'all'}
 
